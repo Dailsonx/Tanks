@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>REJUBILA-TE</title>
+</head>
+<body>
+    <main id="form_container">
+        <div id="form_header">
+            <h1 id="form_title">
+                Inscreva-se
+            </h1>
+            <button class="btn-default">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </div>
+
+        <form name="contact" method="POST" data-netlify="true" class="form" id="form">
+            <div id="input_container">
+                <div class="input-box">
+                    <label 
+                         for="name"
+                         class="form-label"
+                    >
+                        Primeiro nome
+                    </label>
+                    <div class="input-field">
+                        <input 
+                            type="text"
+                            name="name"
+                            id="name"
+                            class="form-control"
+                            placeholder="Digite seu nome"
+                        >
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label 
+                         for="last-name"
+                         class="form-label"
+                    >
+                        Sobrenome
+                    </label>
+                    <div class="input-field">
+                        <input 
+                            type="text"
+                            name="last-name"
+                            id="last-name"
+                            class="form-control"
+                            placeholder="Digite seu sobrenome"
+                        >
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label 
+                         for="birthdate"
+                         class="form-label"
+                    >
+                        Nascimento
+                    </label>
+                    <div class="input-field">
+                        <input 
+                            type="date"
+                            name="birthdate"
+                            id="birthdate"
+                            class="form-control"
+                        >
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label 
+                         for="birthdate"
+                         class="form-label"
+                    >
+                        E-mail
+                    </label>
+                    <div class="input-field">
+                        <input 
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="exemplo@gmail.com"
+                        >
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label 
+                         for="birthdate"
+                         class="form-label"
+                    >
+                        Telefone
+                    </label>
+                    <div class="input-field">
+                        <input 
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            class="form-control"
+                            placeholder="(xx) xxxx-xxxx"
+                            pattern="[0-9]{10,11}"
+                            inputmode="numeric"
+                        >
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label 
+                         for="birthdate"
+                         class="form-label"
+                    >
+                        Tel do responsavel
+                    </label>
+                    <div class="input-field">
+                        <input 
+                            type="tel"
+                            name="tel"
+                            id="Telefone"
+                            class="form-control"
+                            placeholder="(xx) xxxx-xxxx"
+                        >
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+                <div class="radio-container">
+                    <label class="form-label">
+                        Gênero
+                    <label>
+
+                    <div id="gender_inputs">
+                        <div class="radio-box">
+                            <input 
+                               type="radio"
+                               name="gender"
+                               id="female"
+                               class="form-control"
+                               value="female"
+                               >
+                               <label 
+                               for="famele" 
+                               class="form-label"
+                               >
+                               Femenino
+                            </label>
+                        </div>
+
+                        <div class="radio-box">
+                            <input 
+                               type="radio"
+                               name="gender"
+                               id="male"
+                               class="form-control"
+                               value="male"
+                               >
+                               <label 
+                               for="mele" 
+                               class="form-label"
+                               >
+                               Masculino
+                            </label>
+                        </div>
+
+                        <div class="radio-box">
+                            <input 
+                               type="radio"
+                               name="gender"
+                               id="other"
+                               class="form-control"
+                               value="other"
+                               >
+                               <label 
+                               for="other" 
+                               class="form-label"
+                               >
+                               Outros
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-default">
+                <i class="fa-solid fa-check"></i>
+                Concluir
+        </form>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
